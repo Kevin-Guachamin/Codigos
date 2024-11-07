@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFest</title>
+    <link rel="stylesheet" href="style3.css" href="prueba2.js">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <div class="add-movie-section">
+            <h1>CineFest</h1>
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo">
+            </div>
+
+            <div class="form-group">
+                <label for="anio">Año de filmación:</label>
+                <input type="number" id="anio" name="anio">
+            </div>
+
+            <div class="form-group">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Seleccione una categoría</option>
+                    <option value="Ciencia ficción">Ciencia ficción</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Cómico">Cómico</option>
+                    <option value="Acción">Acción</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="urlImagen">URL de la imagen:</label>
+                <input type="url" id="urlImagen" name="urlImagen">
+            </div>
+
+            <button id="btnAgregar">Agregar</button>
+        </div>
+
+        <div class="movies-container" id="moviesContainer">
+            <!-- Aquí se agregarán las películas dinámicamente -->
+        </div>
+
+        <div class="theme-toggle">
+            <label>
+                <input type="checkbox" id="themeToggle">
+                Cambiar tema
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

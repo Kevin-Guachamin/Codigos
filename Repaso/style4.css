@@ -1,0 +1,150 @@
+*{
+    margin:0px auto;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: auto;
+    background-color: rgb(44, 172, 231);
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.zonas{
+    margin: 2% 10% 2% 10%;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imagen{
+    width: 10%;
+    display: flex;
+}
+img{
+    height: auto;
+    width: 75%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10% 5% 5% 5%;
+}
+.zamarillas{
+    background-color: yellow;
+    border-radius: 15px;
+}
+.zamarillas .textos {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.zamarillas .textos .tituloamarillo{
+    display: inline-block;
+}
+.zamarillas .textos .likes{
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    transform: translateY(-5%);
+    font-size: 18px;
+    color: #000;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.descripcion{
+    background-color: white;
+    color: blue;
+    text-align: center;
+}
+.megusta{
+    width: 10%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.zverdehijo{
+    width: 27.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: green;
+    border-radius: 15px;
+}
+.lineas{
+    margin: 10% 2% 0% 2%;
+    text-align: center;
+}
+.imagen_2{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+.zverdes2 {
+    background-color: #90EE90;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tituloverde2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.elementos {
+    margin-bottom: 15px;
+}
+
+.elementos select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.fechas {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.fechas > div {
+    flex: 1;
+}
+
+.fechas label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fechas input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.enviar {
+    background: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}

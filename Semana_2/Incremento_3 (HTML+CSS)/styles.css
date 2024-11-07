@@ -1,0 +1,107 @@
+/* Estilos anteriores... */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #intro {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .intro-content img {
+    width: 50%;
+    margin-top: 15px;
+  }
+  
+  .search-form {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-form form {
+    display: inline-block;
+  }
+  
+  .search-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-form button {
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+/* Inicio de código nuevo */
+#restaurant-list {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .restaurant-item {
+    background-color: #f8f8f8;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .restaurant-item h4 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .restaurant-item p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+  }
+  /* Fin de código nuevo */
+  

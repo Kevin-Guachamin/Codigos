@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    html, body{
+        height: 100%;
+    }
+    #cont-rojo{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 10%;
+    }
+    .rojo{
+        background-color: red;
+        width: 20%;
+    }
+    #rojo1{
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .azul{
+        background-color: yellow; 
+        flex: 1;
+        margin: 5%;
+    }
+    #rojo2{
+        flex: 1;
+    }
+    #rojo3{
+    flex: 1;
+    }
+
+</style></head>
+<body>
+    <div id="cont-rojo">
+        <div id="rojo1" class="rojo" >
+            <div class="azul"></div>
+            <div class="azul"></div>
+            <div class="azul"></div>
+        </div>
+        <div id="rojo2" class="rojo">Bloque2</div>
+        <div id="rojo3" class="rojo">Bloque3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#z1 {
+    background-color: green;
+    width: 100%;
+    height: 40%;
+    margin: 0% 0% 2% 0%;
+}
+
+#z2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+#z3 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 3%;
+}
+
+.azul {
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+    margin: 2% 2% 2% 2%;
+}
+
+#z4 {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+#z5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+
+.amarillo {
+    background-color: yellow;
+    width: 100%;
+    margin: 2% 2% 2% 2%;
+}
+
+.morado {
+    background-color: purple;
+    width: 95%;
+    height: 40%;
+    margin: 2% 2% 2% 2%;
+}

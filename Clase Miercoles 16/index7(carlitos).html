@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px auto;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #gris{
+            background-color: rgb(177, 174, 174);
+            width: 100%;
+            height: 100%;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #verde{
+            background-color: green;
+            width: 100%;
+            height: 40%;
+            margin: 0% 0% 2% 0%;
+        }
+
+        #azulRojo{
+            display: flex;
+            flex-direction: row;
+            justify-content: baseline;
+            height: 100%;
+            width: 100%;
+        }
+
+        #azul{
+            display: flex;
+            flex-direction: column;
+            margin-right: 3%;
+            width: 30%;
+        }
+
+        .azulHijo{
+            background-color: blue;
+            width: 100%;
+            height: 50%;
+            margin-bottom: 10%;
+            
+        }
+
+
+        #rojoMorado{
+            width: 100%;
+            background-color: red;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #rojo{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+        .amarillo{
+            background-color: yellow;
+            width: 100%;
+            margin: 2%;
+        }
+
+        .morado{
+            background-color: violet;
+            width: 95%;
+            height: 40%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="gris">
+        <div id="verde"></div>
+        <div id="azulRojo">
+            <div id="azul">
+                <div class="azulHijo"></div>
+                <div class="azulHijo"></div>
+            </div>
+            <div id="rojoMorado">
+                <div id="rojo">
+                    <div class="amarillo"></div>
+                    <div class="amarillo"></div>
+                    <div class="amarillo"></div>
+                    <div class="amarillo"></div>
+                </div>
+                <div class="morado"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

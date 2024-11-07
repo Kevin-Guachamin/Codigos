@@ -1,0 +1,165 @@
+*{
+    margin:0px auto;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(44, 172, 231);
+    font-family: arial, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: auto;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+.zonas{
+    margin: 2% 10% 2% 10%;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imagen{
+    width: 10%;
+    display: flex;
+}
+img{
+    height: auto;
+    width: 75%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10% 5% 5% 5%;
+}
+.zamarillas{
+    background-color: yellow;
+    border-radius: 15px;
+}
+.zamarillas .textos {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.zamarillas .textos .tituloamarillo{
+        display: inline-block;
+}
+.zamarillas .textos .likes{
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    transform: translateY(-5%);
+    font-size: 18px;
+    color: #000;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.descripcion{
+    background-color: white;
+    color: blue;
+    text-align: center;
+}
+.megusta{
+    width: 10%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.zverdes1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Añade espacio entre los elementos */
+    padding: 0 10px; /* Opcional: añade un poco de padding en los laterales */
+}
+.zverdehijo{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: green;
+    border-radius: 15px;
+}
+.lineas{
+    margin: 10% 2% 0% 2%;
+    text-align: center;
+}
+.imagen_2{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+.zverdes2{
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.tituloverde2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.elementos{
+    display: flex;
+    flex-direction: row;
+    text-align: left ;
+    margin:0;
+}
+.elementos label{
+    width: 17%;
+    text-align: right;
+    margin-right: 1%;
+    
+}
+.elementos select{
+    margin-left: auto;
+    width: 145%;
+    margin-right: 10px;
+}
+.fechas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.fechas > div {
+    display: flex;
+    align-items: center;
+    width: 45%; /* Ajusta el ancho de cada sección */
+    gap: 5px; /* Espacio mínimo entre el label y el input */
+}
+.fechas label {
+    width: auto;
+    text-align: left;
+    margin: 0;
+}
+.fechas input {
+    width: 80%; /* Aumenta el ancho del input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5%; /* Añade un poco de padding para un aspecto más amplio */
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    background-color: rgb(19, 99, 190);
+    color: white;
+    border: 2px solid rgb(19, 99, 190);
+}

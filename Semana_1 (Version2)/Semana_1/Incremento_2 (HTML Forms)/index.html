@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ñanEC - Gastronomía de San José</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos a ñanEC</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showMenu('Inicio')">Inicio</a></li>
+        <li><a href="#" onclick="showMenu('Restaurantes')">Restaurantes</a></li>
+        <li><a href="#" onclick="showMenu('Recetas')">Recetas</a></li>
+        <li><a href="#" onclick="showMenu('Eventos')">Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de bienvenida (así se escribe un comentario en HTML) -->
+  <section id="intro">
+    <div class="intro-content">
+        <h2 id="menuTitle">Descubre la mejor gastronomía de San José</h2>
+        <p id="menuContent">Explora los mejores restaurantes y platos típicos de la región.</p>
+      <img src="./img/Plato_tipico.jfif" alt="Plato típico de San José">
+    </div>
+  </section>
+
+  <!-- Sección de búsqueda de restaurantes -->
+  <section id="search">
+    <div class="search-form">
+      <h3>Busca tu restaurante favorito</h3>
+      <form action="#" method="GET">
+        <input type="text" name="restaurant-name" placeholder="Nombre del restaurante" required>
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 ñanEC - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
