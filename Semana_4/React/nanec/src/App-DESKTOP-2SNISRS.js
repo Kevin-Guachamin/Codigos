@@ -5,7 +5,7 @@ import ItemRestaurante from './Componentes/ItemRestaurante';
 //Codigo Principal
 function App() {
 
-  agregarRestaurante = () => {
+  const agregarRestaurante = () => {
     setRestaurantes(prevState => ({ restaurantes: [...prevState.restaurantes, { nombre: "Nuevo Restaurante", tipo: "Tipo de comida", horario: "00:00 - 00:00", imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zXJNyANS8TG8NHjHX4hUdaU_Q6VQSKaMQg&s" }] }));
   }
   const [restaurantes, setRestaurantes] = React.useState([
