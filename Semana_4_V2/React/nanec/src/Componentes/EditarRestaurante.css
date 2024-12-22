@@ -1,0 +1,74 @@
+h1 {
+  font-size: 2em;
+  color: #ffffff; /* Define el color deseado */
+  background-color: black; /* Define el color de fondo deseado */
+}
+.editar-restaurante h1 {
+  width: 100%; /* Permite que el título ocupe todo el ancho disponible */
+}
+/* Estilo general del contenedor principal */
+.editar-restaurante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Estilo general para el formulario */
+.editar-restaurante form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Alineación de los campos del formulario */
+.editar-restaurante form div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Estilo para los labels */
+.editar-restaurante label {
+  width: 150px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Estilo para los inputs */
+.editar-restaurante input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilo del botón */
+.editar-restaurante button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  align-self: center;
+}
+
+.editar-restaurante button[type="submit"]:hover {
+  background-color: #0056b3;
+}

@@ -4,7 +4,7 @@
       "id": "1",
       "nombre": "Restaurante El Buen Sabor",
       "tipo": "Tradicional",
-      "horario": "12:00 - 22:00",
+      "horario": "12:00 - 23:00",
       "imagen": "https://s2.abcstatics.com/abc/sevilla/media/gurmesevilla/2012/01/comida-rapida-casera.jpg"
     },
     {
@@ -26,6 +26,13 @@
       "nombre": "Tortillas tradicionales",
       "tipo": "Tradicional",
       "horario": "13:00 - 21:00",
+      "imagen": "https://s2.abcstatics.com/abc/sevilla/media/gurmesevilla/2012/01/comida-rapida-casera.jpg"
+    },
+    {
+      "id": "5",
+      "nombre": "PoliBurguer",
+      "tipo": "Fast Food",
+      "horario": "08:00 - 21:00",
       "imagen": "https://s2.abcstatics.com/abc/sevilla/media/gurmesevilla/2012/01/comida-rapida-casera.jpg"
     }
   ]

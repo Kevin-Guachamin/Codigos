@@ -37,5 +37,31 @@
   }
 }
 img{
-  width: 10%;
+  width: 20%;
+}
+
+h1 {
+  font-size: 2em;
+  color: #ffffff; /* Define el color deseado */
+  background-color: black; /* Define el color de fondo deseado */
+}
+.item a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #007bff; /* Define el color deseado */
+  text-decoration: none; /* Opcional para quitar subrayado */
+}
+
+.item a:hover {
+  text-decoration: underline; /* Opcional para subrayar al pasar el cursor */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }

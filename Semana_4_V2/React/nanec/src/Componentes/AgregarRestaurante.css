@@ -1,0 +1,65 @@
+/* Estilo de la tarjeta */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto; /* Margen superior e inferior */
+    width: 50%; /* Ancho del formulario */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Estilo general para el formulario */
+.formulario {
+    width: 100%; /* Asegura que el formulario use todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre filas */
+    padding: 20px; /* Añadir espacio interno */
+}
+
+/* Alineación de los divs */
+.formulario div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Mantener label e input alineados */
+    gap: 10px; /* Espaciado entre el label y el input */
+}
+
+/* Estilo para los labels */
+.formulario label {
+    width: 150px; /* Ancho fijo para alinear todos los labels */
+    text-align: left;
+}
+
+/* Estilo para los inputs */
+.formulario input {
+    flex-grow: 1; /* Asegura que todos los inputs tengan el mismo tamaño */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Centrar el botón */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px; /* Espacio entre el botón y los inputs */
+    align-self: center; /* Centrar el botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
