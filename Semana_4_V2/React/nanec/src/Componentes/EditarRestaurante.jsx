@@ -15,7 +15,7 @@ const EditarRestaurante = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://172.31.45.35:8000/restaurantes/${id}`)
+        axios.get(`http://localhost:8000/restaurantes/${id}`)
             .then((response) => {
                 setRestaurante(response.data);
             })
@@ -35,7 +35,7 @@ const EditarRestaurante = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.put(`http://172.31.45.35:8000/restaurantes/${id}`, restaurante)
+        axios.put(`http://localhost:8000/restaurantes/${id}`, restaurante)
             .then(() => {
                 navigate("/restaurantes");
             })

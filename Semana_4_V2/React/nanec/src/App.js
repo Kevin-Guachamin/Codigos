@@ -33,10 +33,20 @@ function App() {
     })
     .catch((error) => {console.log("Respuesta Fallida ",error);});
   }*/
-
+  
   // Función para cargar la lista de restaurantes
   const cargarRestaurantes = () => {
-    axios.get("http://172.31.45.35:8000/restaurantes")
+    const token = localStorage.getItem('token');
+    if (!token) {
+      console.log('No token found, please login first');
+      //Aquí podrían cambiar una variable de estado de tipo error
+      return;
+    }
+    axios.get("http://localhost:8000/restaurantes", {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
       .then((response) => {
         setRestaurantes(response.data);
       })
@@ -71,7 +81,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Bienvenidos a ñanEC</h1>
+      <h1>Bienvenidos a ñanEC </h1>
       {/*restaurantes.map((rest, index) => (<ItemRestaurante key={index} nombre={rest.nombre} tipo={rest.tipo} horario={rest.horario} imagen={rest.imagen}></ItemRestaurante>))}
         {/*<button onClick={agregarRestaurante}>Agregar</button>
         <button onClick={cargarRestaurante}>Cargar</button>*/}

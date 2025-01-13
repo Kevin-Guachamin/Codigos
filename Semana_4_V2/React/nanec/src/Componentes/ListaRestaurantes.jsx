@@ -12,11 +12,16 @@ function ListaRestaurantes({ restaurantes, onRecargar }) {
   }, [onRecargar]);
 
   return (
+
     <div>
+      <div><button onClick={() => {
+        localStorage.removeItem('token'); // Elimina el token del almacenamiento local
+        window.location.href = "/"; // Redirige al inicio
+      }} class="Salir">Salir</button></div>
       <button onClick={() => navigate('/Form')}>Agregar</button>
       <Link to="/Form">Nuevo</Link>
       {restaurantes.map((rest, index) => (
-        <ItemRestaurante 
+        <ItemRestaurante
           key={index}
           id={rest._id}
           nombre={rest.nombre}

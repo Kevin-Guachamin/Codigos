@@ -26,7 +26,7 @@ const AgregarRestaurante = (props) => {
 
     const handleAgregarSubmitRestaurante = (e) => {
         e.preventDefault();
-        axios.post("http://172.31.45.35:8000/restaurantes", datosFormRestaurante)
+        axios.post("http://localhost:8000/restaurantes", datosFormRestaurante)
         .then((response) => {console.log("Respuesta Exitosa ",response);
         setDatosFormRestaurante({
             id: "",

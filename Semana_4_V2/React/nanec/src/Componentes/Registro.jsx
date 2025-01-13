@@ -48,7 +48,7 @@ const Registro = () => {
             return;
         }
 
-        axios.post("http://172.31.45.35:8000/register", {
+        axios.post("http://localhost:8000/register", {
             email: correo,
             password: contrasena
         })

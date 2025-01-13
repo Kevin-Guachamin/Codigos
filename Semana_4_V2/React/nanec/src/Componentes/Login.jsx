@@ -8,12 +8,12 @@ const Login = () => {
     const [error, setError] = React.useState("");
     const navigate = useNavigate();
 
-    const handleLogin = (e) => {
-        e.preventDefault(); 
+    /*const handleLogin = (e) => {
+        e.preventDefault();
         // Reinicia el mensaje de error
         setError("");
 
-        axios.post("http://172.31.45.35:8000/login", {
+        axios.post("http://localhost:8000/login", {
             email: usuario,
             password: contrasena
         })
@@ -25,6 +25,21 @@ const Login = () => {
                 console.log("Ingreso fallido ", error);
                 setError("Usuario o contraseña incorrectos.");
             });
+    };*/
+
+    const handleLogin = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:8000/login', {
+                email: usuario,
+                password: contrasena
+            });
+            const token = response.data.token;
+            localStorage.setItem('token', token); // Almacenar el token en localStorage
+            navigate('/restaurantes'); // Redirigir a la página de usuarios
+        } catch (error) {
+            console.error('Error logging in', error);
+        }
     };
 
     return (
