@@ -1,19 +1,19 @@
-const express = require('express'); //require --> Importar un módulo
-
+const express = require('express');
 const cors = require('cors');
-const app = express(); //Permite configurar al servidor web
-
+const app = express();
 const port = 8000;
-
-//Con el .use se definen los midleware
-app.use(cors());
-app.use(express.json()); //Sirve para convertir un json en un objeto de JavaScript
-app.use(express.urlencoded({ extended: true }));
 
 require('./config/sequelize.config');
 
-const allRestaurantesRoutes = require('./routes/restaurante.routes');
-allRestaurantesRoutes(app);
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+const allRestauranteRoutes = require('./routes/restaurante.routes');
+allRestauranteRoutes(app);
+
+const AllMenuRoutes = require('./routes/menu.routes');
+AllMenuRoutes(app);
 
 app.listen(port, () => {
     console.log("Server listening at port", port);

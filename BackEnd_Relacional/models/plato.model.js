@@ -1,20 +1,18 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/sequelize.config');
 
-const Plato = sequelize.define('Restaurante', {
-    id: {
+const Plato = sequelize.define('Plato', {
+    id:{
         type: DataTypes.INTEGER,
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        validate: {
-            notNull: { msg: "Id is requiered" }
-        }
-    },nombre: {
+    },
+    nombre:{
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-            notNull: { msg: "Nombre is requiered" }
+        validate:{
+            notNull: {msg: "El nombre es requerido"}
         }
     }
 });

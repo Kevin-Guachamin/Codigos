@@ -10,7 +10,8 @@ const Restaurante = sequelize.define('Restaurante', {
         validate: {
             notNull: { msg: "Id is requiered" }
         }
-    },nombre: {
+    },
+    nombre: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
